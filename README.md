@@ -31,3 +31,6 @@ j2 crd-openapi.json.j2 [path/to/crd.yaml] > openapi.json
 # Status and limitations
 * The template not handle properly `status` and `scale` subresources
 * It can only generate the specification for one CRD. In order to generate multiple a manual merge is needed.
+
+# Internals
+The api generated is based on the file [https://github.com/kubernetes-client/gen/blob/master/openapi/custom_objects_spec.json]
