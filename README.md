@@ -2,7 +2,7 @@
 Convert Kubernetes CRDs into openapi specifications
 
 # Purpose
-This tempalte can be used to convert Kubernetes Custom Resource Definitions (CRDs) to openapi specifications. It can be used for generating client APIs for different programming languages.
+This template can be used to convert Kubernetes Custom Resource Definitions (CRDs) to openapi specifications. It can be used for generating client APIs for different programming languages.
 
 # Motivation
 Usually, the process to create a go-lang specific client to access CRDs is as suggested in [https://github.com/kubernetes/kube-openapi/issues/13]
