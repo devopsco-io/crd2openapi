@@ -16,7 +16,9 @@
         "$ref": "#/definitions/v1.ObjectMeta"
       }
       {% for key, value in spec.validation.openAPIV3Schema.properties.items() %}
+      {% if key not in ['apiVersion', 'kind', 'metadata'] %}
       , "{{key}}": {{ value | tojson }}
+      {% endif %}
       {% endfor %}
     }
   },
